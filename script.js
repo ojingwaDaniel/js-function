@@ -38,3 +38,15 @@ function nigerian(languages){
 
 }
 nigerian(['akwa-ibom','item','ebonyi','igbo'])
+// creating a function that takes the avg value of a giving array
+function avgValue(...numbers){
+    let totals = 0
+
+    for (let num of numbers) {
+        totals += num
+        
+    }
+    let avg= totals/ numbers.length
+    console.log(avg)
+   
+}
