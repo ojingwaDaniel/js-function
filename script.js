@@ -10,14 +10,17 @@ function numOfTimes(times){
 // numOfTimes(30)
 // code to mutiply, add and divide parameter in a function
 function mutiply(x,y){
-    console.log(x * y)
+     return x * y
 }
-mutiply(5,5)
+let answer = mutiply(5,5)
 function add(a,b){
-    console.log(a + b)
+    return a + b
 }
-add(20,20)
+let total = add(20,20)
 function divide(j,k){
-    console.log(j / k)
+    return j / k
 }
-divide(25,5)
+let score =  divide(25,5)
+console.log(answer)
+console.log(total)
+console.log(score)
