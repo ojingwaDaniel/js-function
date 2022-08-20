@@ -92,3 +92,24 @@ function isValidPassword(password,username){
     return true
 
 }
+// a function that pick a random items of two  arrays and add them together in a obejct
+// {
+//     value : 2;
+//     suits : 'clubs'
+// }
+// values = 1,2,3,4,5,6,7,8,9,10,J,K,L,O
+
+// suits = 'clubs','hearts','diamond','spades'
+function pick(array){
+  let index = Math.floor(Math.random() * array.length)
+  index = array[index]
+  return index
+}
+function pickingCards(){
+    let values = [1,2,3,4,5,6,7,8,9,10,'J','K','L','O']
+    let suits = ['clubs','hearts','diamond','spades']
+    return {
+        value : pick(values),
+        suit : pick(suits)
+    }
+}
