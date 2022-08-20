@@ -102,8 +102,8 @@ function isValidPassword(password,username){
 // suits = 'clubs','hearts','diamond','spades'
 function pick(array){
   let index = Math.floor(Math.random() * array.length)
-  index = array[index]
-  return index
+  let element = array[index]
+  return element
 }
 function pickingCards(){
     let values = [1,2,3,4,5,6,7,8,9,10,'J','K','L','O']
